@@ -16,7 +16,6 @@ class QuoteBox extends Component {
         function randomNumb() {
             return Math.floor(Math.random() * (jsonQuotes.quotes.length -1));
         }
-        console.log(randomNumb());
         this.setState({
             sentence: jsonQuotes.quotes[randomNumb()].quote,
             author: jsonQuotes.quotes[randomNumb()].author

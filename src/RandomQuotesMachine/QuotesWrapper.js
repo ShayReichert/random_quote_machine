@@ -1,34 +1,53 @@
 import React, { Component } from 'react';
 import QuoteBox from './QuoteBox';
-import './QuoteWrapper.css'; 
+import './QuoteWrapper.css';
 
- class QuotesWrapper extends Component {
-
+class QuotesWrapper extends Component {
 
     constructor(props) {
         super(props)
-    
+
         this.state = {
-             randomColor: '#144454'
+            randomColor: '#144454'
         }
     }
 
-//generate a random color with minimal brightness
-    newBackgroundColor = () => {
-        function randomChannel() {
-            var r = 255 - 10;
-            var n = 0 | ((Math.random() * r) + 10);
-            var s = n.toString(16);
-            return (s.length === 1) ? '0' + s : s;
-        }
+
+    //generate a random color with a minimal brightness threshold
+    randomChannel = () => {
+        var r = 255 - 10;
+        var n = 0 | ((Math.random() * r) + 10);
+        var s = n.toString(16);
+        return (s.length === 1) ? '0' + s : s;
+    }
+
+    //generate a random color on first load
+    componentDidMount() {
         this.setState({
-            randomColor: '#' + randomChannel() + randomChannel() + randomChannel()
+            randomColor: '#' + this.randomChannel() + this.randomChannel() + this.randomChannel()
         })
     }
+
+    //generate the random hex color code
+    newBackgroundColor = () => {
+        this.setState({
+            randomColor: '#' + this.randomChannel() + this.randomChannel() + this.randomChannel()
+        })
+    }
+
+
+
+
+
+
+
+
+
+
     render() {
         return (
-            <div style={{backgroundColor: this.state.randomColor}} id="wrapper">
-                <QuoteBox randomColor={this.state.randomColor} onclick={this.newBackgroundColor}  />
+            <div style={{ backgroundColor: this.state.randomColor }} id="wrapper">
+                <QuoteBox randomColor={this.state.randomColor} onclick={this.newBackgroundColor} />
             </div>
         )
     }
@@ -39,11 +58,25 @@ export default QuotesWrapper;
 
 
 //// BUGS TO FIXED //////
-//amélioration : couleur random avec un seuil de luminosité maximale
-// fondu transition pour l'apparition de la phrase et de l'auteur aléatoire
-// Au chargement: faire apparaître une citation aléatoirement.
-
+// 1. amélioration : couleur random avec un seuil de luminosité maximale
+// 2. fondu transition pour l'apparition de la phrase et de l'auteur aléatoire
+// 3. Au chargement: faire apparaître une citation aléatoirement.
 
 
 ////// BUGS FIXED //////
 //bug : de temps en temps, la méthode randomNumb de la fonction randomQuoteAndAuthor dans QuoteBox crash.
+
+
+
+//1. Algorithme en cours de création pour générer une couleru avec une luminosité mini :
+// newBackgroundColor = () => {
+//     function getColor() {
+//         return "hsl(" + 360 * Math.random() + ',' +
+//             (25 + 70 * Math.random()) + '%,' +
+//             (85 + 10 * Math.random()) + '%)';
+//     }
+//     console.log(getColor())
+//     this.setState({
+//         randomColor: this.getColor()
+//     })
+// }
