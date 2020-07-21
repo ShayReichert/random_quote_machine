@@ -13,7 +13,7 @@ class QuotesWrapper extends Component {
     }
 
 
-    //generate a random color with a minimal brightness threshold
+    //Generate a random color with a minimal brightness threshold
     randomChannel = () => {
         var r = 255 - 10;
         var n = 0 | ((Math.random() * r) + 10);
@@ -21,27 +21,19 @@ class QuotesWrapper extends Component {
         return (s.length === 1) ? '0' + s : s;
     }
 
-    //generate a random color on first load
+    //Set a random color on first load on State
     componentDidMount() {
         this.setState({
             randomColor: '#' + this.randomChannel() + this.randomChannel() + this.randomChannel()
         })
     }
 
-    //generate the random hex color code
+    //Set the random hex color code on click
     newBackgroundColor = () => {
         this.setState({
             randomColor: '#' + this.randomChannel() + this.randomChannel() + this.randomChannel()
         })
     }
-
-
-
-
-
-
-
-
 
 
     render() {
@@ -60,15 +52,15 @@ export default QuotesWrapper;
 //// BUGS TO FIXED //////
 // 1. amélioration : couleur random avec un seuil de luminosité maximale
 // 2. fondu transition pour l'apparition de la phrase et de l'auteur aléatoire
-// 3. Au chargement: faire apparaître une citation aléatoirement.
+
 
 
 ////// BUGS FIXED //////
 //bug : de temps en temps, la méthode randomNumb de la fonction randomQuoteAndAuthor dans QuoteBox crash.
+// 3. Au chargement: faire apparaître une citation aléatoirement.
 
 
-
-//1. Algorithme en cours de création pour générer une couleru avec une luminosité mini :
+//1. Algorithme en cours de création pour générer une couleur avec une luminosité mini :
 // newBackgroundColor = () => {
 //     function getColor() {
 //         return "hsl(" + 360 * Math.random() + ',' +

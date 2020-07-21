@@ -11,14 +11,24 @@ class QuoteBox extends Component {
         author: "Cerise Caouette"
     }
 
-    //Generate a random sentence and author 
-    randomQuoteAndAuthor = () => {
-        function randomNumb() {
-            return Math.floor(Math.random() * (jsonQuotes.quotes.length -1));
-        }
+    //Generate a random quotes and author from JSON file
+    randomNumb = () => {
+        return Math.floor(Math.random() * (jsonQuotes.quotes.length -1));
+    }
+
+    //Set a random quotes and author on first load
+    componentDidMount() {
         this.setState({
-            sentence: jsonQuotes.quotes[randomNumb()].quote,
-            author: jsonQuotes.quotes[randomNumb()].author
+            sentence: jsonQuotes.quotes[this.randomNumb()].quote,
+            author: jsonQuotes.quotes[this.randomNumb()].author
+        })
+    }
+
+    //Set a random sentence and author on click
+    randomQuoteAndAuthor = () => {
+        this.setState({
+            sentence: jsonQuotes.quotes[this.randomNumb()].quote,
+            author: jsonQuotes.quotes[this.randomNumb()].author
         })
     }
 
@@ -27,7 +37,7 @@ class QuoteBox extends Component {
             <div id="quote-box">
                 <QuoteText randomSentence={this.state.sentence} randomColor={this.props.randomColor} />
                 <QuoteAuthor randomAuthor={this.state.author} randomColor={this.props.randomColor} />
-                <Buttons randomclick={this.randomQuoteAndAuthor} onclick={this.props.onclick} randomColor={this.props.randomColor} />
+                <Buttons randomSentence = {this.state.sentence} randomAuthor={this.state.author} randomclick={this.randomQuoteAndAuthor} onclick={this.props.onclick} randomColor={this.props.randomColor} />
             </div>
         )
     }

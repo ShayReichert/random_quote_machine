@@ -6,8 +6,6 @@
 #wrapper {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
         sans-serif;
-    /* Backgorund-color à rendre aléatoire */
-    background-color: lightcoral;
     min-height: 100vh;
     box-sizing: border-box;
     margin: 0;
@@ -28,8 +26,6 @@
     padding: 45px 50px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #888888;
-    /* a lier à la couleur de fond : */
-    color : lightcoral;
 }
 
 /* Sentence text */
@@ -55,6 +51,9 @@
     transition: all ease 700ms;
 }
 
+
+
+
 /* Buttons */
 .button {
     display: inline-block;
@@ -69,11 +68,18 @@
     min-width: 40px;
     color: #fff;
     border-radius: 2px;
-    /* a lier à la couleur de fond : */
-    background-color: lightcoral;
     transition: all ease 700ms;
 }
-button:hover {
+.button a {
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    min-width: 20px;
+    color: #fff;
+    border-radius: 2px;
+    transition: all ease 700ms;
+}
+button:hover, a:hover {
     opacity: 0.9;
 }
 .btn-new-sentence {
@@ -84,9 +90,17 @@ button:hover {
 #fb-btn {
     float: left;
 }
+#twitter-btn i,
+#fb-btn i{
+    text-align: center;
+    margin: auto;
+}
+
 #twitter-btn {
     margin-right: 9px;
 }
 a {
+    display: inline-block;
     color: #fff;
+    text-decoration: none;
 }

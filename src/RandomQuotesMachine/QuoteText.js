@@ -8,7 +8,6 @@ class QuoteText extends Component {
             <div style={{ color: this.props.randomColor }} className="quote-text">
                 <i className="fas fa-quote-left"></i>
                 <div id="text">{this.props.randomSentence}</div>
-                {/* <button onClick={this.randomNumberforQuoteAndAuthor}>test</button> */}
             </div>
         )
     }

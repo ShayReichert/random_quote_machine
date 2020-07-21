@@ -2,25 +2,21 @@ import React, { Component } from 'react'
 
 class Buttons extends Component {
 
-    //Import of 2 props in one function for onClick' event :
+    //Import 2 props in one function for onClick' event :
     randomClickandOnClick = () => {
         this.props.randomclick();
         this.props.onclick();
     }
 
-    //twitter une phrase
-    tweetTheSentence = () => {
-        window.open('https://twitter.com/intent/tweet')
-        
-    }
+  
 
 
     render() {
-        const { randomColor } = this.props;
+        const { randomColor, randomSentence, randomAuthor } = this.props;
         return (
             <div className="button">
-                <button style={{backgroundColor: randomColor}} onClick={this.tweetTheSentence} id="twitter-btn"><a href="twitter.com/intent/tweet"><i className="fab fa-twitter"></i></a></button>
-                <button style={{backgroundColor: randomColor}} id="fb-btn"><a id="tweet-quote" href="facebook.com"><i className="fab fa-facebook-f"></i></a></button>
+                <a href={`https://twitter.com/intent/tweet?text="${randomSentence}"%20-%20${randomAuthor}&hashtags=fakequotes`}  target="_blank" rel="noopener noreferrer" style={{backgroundColor: randomColor}} id="twitter-btn"><i className="fab fa-twitter"></i></a>
+                <a href={`https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=fakequotes&caption=${randomAuthor}&content="${randomSentence}"&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button`} target="_blank" rel="noopener noreferrer" style={{backgroundColor: randomColor}} id="fb-btn"><i className="fab fa-tumblr"></i></a>
                 <button style={{backgroundColor: randomColor}}  onClick={this.randomClickandOnClick} className="btn-new-sentence" id="new-quote">Nouvelle Phrase</button>
             </div>
         )
