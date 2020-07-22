@@ -59,7 +59,6 @@
 .button {
     display: inline-block;
     position: relative;
-    
 }
 .button button {
     cursor: pointer;
@@ -70,6 +69,7 @@
     color: #fff;
     border-radius: 2px;
     transition: all ease 700ms;
+    outline: none;
 }
 .button a {
     cursor: pointer;
@@ -80,8 +80,8 @@
     border-radius: 2px;
     transition: all ease 700ms;
 }
-button:hover, a:hover {
-    opacity: 0.9;
+.button a:hover , .button button:hover {
+    opacity: 0.8;
 }
 .btn-new-sentence {
     cursor: pointer;
