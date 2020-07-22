@@ -51,7 +51,7 @@ export default QuotesWrapper;
 
 //// BUGS TO FIXED //////
 // 1. amélioration : couleur random avec un seuil de luminosité maximale
-// 2. fondu transition pour l'apparition de la phrase et de l'auteur aléatoire
+// 2. fondu transition pour l'apparition de la phrase et de l'auteur aléatoire. PAS TROUVÉ DE SOLUTIONS, CREUSER POUR TROUVER UNE SOLUTION CSS
 
 
 

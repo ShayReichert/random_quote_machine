@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class QuoteText extends Component {
 
-
+    
     render() {
         return (
             <div style={{ color: this.props.randomColor }} className="quote-text">
