@@ -2,7 +2,7 @@
   "name": "random-quote-machine",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/ShayReichert/github.io/random_quote_machine",
+  "homepage": "https://shayreichert.github.io/random_quote_machine/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
