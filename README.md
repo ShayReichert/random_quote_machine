@@ -2,14 +2,14 @@
 ## Generate weird sentences with fake authors
 
 ***Click on the image to access :***
-[![DemoSite](https://github.com/ShayReichert/random_quote_machine/blob/master/screen%20generator.png)](https://shayreichert.github.io/random_quote_machine/)
+[![RandomSentenceMachine](https://github.com/ShayReichert/random_quote_machine/blob/master/screen%20generator.png)](https://shayreichert.github.io/random_quote_machine/)
 
 
 ## Description
 
 - Generate sentences with fake authors.
 - You can tweet (or post on tumblr) sentences.
-- FreeCodeCamp Final Project #01
+- [FreeCodeCamp Final Project #01](https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine)
 
 ---
 
@@ -18,6 +18,17 @@
 * [React](https://fr.reactjs.org/) - JavaScript Framework
 
 ---
+
+
+## What you'll learn by making this app
+- Manipulate props and state in React
+- Links to post App's elements on Twitter and Tumblr
+- JS function to generate random colors and make it appears to the DOM
+- Same for generate random quotes and authors from a JSON file
+- Build and deploey an app on GitHub
+
+---
+
 
 ## Tuto : Comment mettre son projet React sur GitHub facilement ? 
 *Pré-requis : Git, compte Github, Node.js, npm*
@@ -90,6 +101,7 @@ git push origin master
 ```
 
 ---
+
 
 **Support**
 
