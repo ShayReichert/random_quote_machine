@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ShayReichert/github.io/random_quote_machine/static/css/main.302b4589.chunk.css",
-    "main.js": "/ShayReichert/github.io/random_quote_machine/static/js/main.9df587ef.chunk.js",
-    "main.js.map": "/ShayReichert/github.io/random_quote_machine/static/js/main.9df587ef.chunk.js.map",
-    "runtime-main.js": "/ShayReichert/github.io/random_quote_machine/static/js/runtime-main.da41c72f.js",
-    "runtime-main.js.map": "/ShayReichert/github.io/random_quote_machine/static/js/runtime-main.da41c72f.js.map",
-    "static/js/2.31b4ac1a.chunk.js": "/ShayReichert/github.io/random_quote_machine/static/js/2.31b4ac1a.chunk.js",
-    "static/js/2.31b4ac1a.chunk.js.map": "/ShayReichert/github.io/random_quote_machine/static/js/2.31b4ac1a.chunk.js.map",
-    "index.html": "/ShayReichert/github.io/random_quote_machine/index.html",
-    "precache-manifest.d5984897bc07814406a85df43a356793.js": "/ShayReichert/github.io/random_quote_machine/precache-manifest.d5984897bc07814406a85df43a356793.js",
-    "service-worker.js": "/ShayReichert/github.io/random_quote_machine/service-worker.js",
-    "static/css/main.302b4589.chunk.css.map": "/ShayReichert/github.io/random_quote_machine/static/css/main.302b4589.chunk.css.map",
-    "static/js/2.31b4ac1a.chunk.js.LICENSE.txt": "/ShayReichert/github.io/random_quote_machine/static/js/2.31b4ac1a.chunk.js.LICENSE.txt"
+    "main.css": "/random_quote_machine/static/css/main.302b4589.chunk.css",
+    "main.js": "/random_quote_machine/static/js/main.cd3563cd.chunk.js",
+    "main.js.map": "/random_quote_machine/static/js/main.cd3563cd.chunk.js.map",
+    "runtime-main.js": "/random_quote_machine/static/js/runtime-main.3831c949.js",
+    "runtime-main.js.map": "/random_quote_machine/static/js/runtime-main.3831c949.js.map",
+    "static/js/2.31b4ac1a.chunk.js": "/random_quote_machine/static/js/2.31b4ac1a.chunk.js",
+    "static/js/2.31b4ac1a.chunk.js.map": "/random_quote_machine/static/js/2.31b4ac1a.chunk.js.map",
+    "index.html": "/random_quote_machine/index.html",
+    "precache-manifest.fe687ffe87a08f79e9a9f46c6e0a89c0.js": "/random_quote_machine/precache-manifest.fe687ffe87a08f79e9a9f46c6e0a89c0.js",
+    "service-worker.js": "/random_quote_machine/service-worker.js",
+    "static/css/main.302b4589.chunk.css.map": "/random_quote_machine/static/css/main.302b4589.chunk.css.map",
+    "static/js/2.31b4ac1a.chunk.js.LICENSE.txt": "/random_quote_machine/static/js/2.31b4ac1a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.da41c72f.js",
+    "static/js/runtime-main.3831c949.js",
     "static/js/2.31b4ac1a.chunk.js",
     "static/css/main.302b4589.chunk.css",
-    "static/js/main.9df587ef.chunk.js"
+    "static/js/main.cd3563cd.chunk.js"
   ]
 }
