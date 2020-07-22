@@ -87,17 +87,17 @@ button:hover, a:hover {
     cursor: pointer;
     float: right;
 }
-#twitter-btn,
+#tweet-quote,
 #fb-btn {
     float: left;
 }
-#twitter-btn i,
+#tweet-quote i,
 #fb-btn i{
     text-align: center;
     margin: auto;
 }
 
-#twitter-btn {
+#tweet-quote {
     margin-right: 9px;
 }
 a {
@@ -105,24 +105,3 @@ a {
     color: #fff;
     text-decoration: none;
 }
-
-
-
-/* Animations ReactCSSTransitionGroup */
-.example-enter {
-    opacity: 0.01;
-  }
-  
-  .example-enter.example-enter-active {
-    opacity: 1;
-    transition: opacity 500ms ease-in;
-  }
-  
-  .example-leave {
-    opacity: 1;
-  }
-  
-  .example-leave.example-leave-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
-  }
